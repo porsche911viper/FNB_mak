@@ -1,0 +1,86 @@
+/* Color Palette Variables */
+:root {
+  --bg-cream-main: #FDFBF7;
+  --bg-cream-card: #F8F4E9;
+  --bg-cream-input: #EFEAD8;
+  --border-khaki: #DCD3BF;
+  
+  --text-khaki-dark: #4A4438;
+  --text-khaki-muted: #787060;
+  
+  --btn-dusty-pink: #D8A4A6;
+  --btn-dusty-pink-hover: #B87376;
+}
+
+/* Custom Tailwind Helper Classes */
+.bg-cream-main {
+  background-color: var(--bg-cream-main);
+}
+
+.bg-cream-card {
+  background-color: var(--bg-cream-card);
+}
+
+.bg-cream-input {
+  background-color: var(--bg-cream-input);
+}
+
+.border-khaki-border {
+  border-color: var(--border-khaki);
+}
+
+.text-khaki-dark {
+  color: var(--text-khaki-dark);
+}
+
+.text-khaki-muted {
+  color: var(--text-khaki-muted);
+}
+
+/* Button Styling: Dusty Pink Base -> Hover Dark Dusty Pink */
+.btn-dusty-pink {
+  background-color: var(--btn-dusty-pink);
+  color: var(--text-khaki-dark);
+}
+
+.btn-dusty-pink:hover {
+  background-color: var(--btn-dusty-pink-hover);
+  color: #FFFFFF;
+}
+
+.bg-dusty-pink {
+  background-color: var(--btn-dusty-pink);
+}
+
+.text-dusty-pink-hover {
+  color: var(--btn-dusty-pink-hover);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-cream-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-khaki);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-khaki-muted);
+}
+
+/* Transitions */
+button, input, select, tr {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Table Row Hover Effect */
+tbody tr:hover {
+  background-color: rgba(220, 211, 191, 0.25);
+}
